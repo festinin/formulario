@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/STYLE.CSS">
+</head>
+
+<body>
+    <!-- <FORm ACTION="/form.html" method="post">   -->
+    <form oninput="result.value=parseInt(precio.value)">
+        <p>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" placeholder="Ingrese usuario">
+        </p>
+
+        <p>
+            <label for="clave">Clave:</label>
+            <input type="password" name="clave">
+        </p>
+
+        <P>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="junito@gmail.com">
+        </P>
+
+        <P>
+            <label for="search">Buscar:</label>
+            <input type="search" name="search">
+        </P>
+
+        <P>
+            <label for="tel">Celular:</label>
+            <input type="tel" name="tel" placeholder="(+57) xxxxx">
+        </P>
+
+        <P>
+            <label for="number">Ingrese su edad:</label>
+            <input type="number" id="number" min="0" max="90">
+        </P>
+
+        <P>
+            <label for="precio"> Valor máximo del producto:</label>
+            <input type="range" id="precio" min="1800" max="18000000" step="100" value="2500000">
+
+            <output name="result" for="precio"></output>
+        </P>
+
+        <P>
+            <label>Seleccione un genero:</label>
+            <select name="genero">
+                <option value="text">Femenino</option>
+                <option value="text">Masculino</option>
+            </select>
+
+        </P>
+
+
+        <BUtton type="reset">BORRAR</BUtton>
+        <BUtton type="submit">ENVIAR</BUtton>
+    </FORm>
+</body>
+
+</html>
